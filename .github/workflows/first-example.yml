@@ -7,9 +7,15 @@ jobs:
         steps: 
         - name: check repo
           uses: actions/checkout@v4
-        - name: welecome message
-          run: echo "hello my first git"
-        - name: List files
-          run: ls
-        - name: read file
-          run: cat README.md
+        - name: List and read files
+          run: |
+            echo "hello my first git"
+            ls -ltra
+            cat README.md
+        - name: Genreate ASCII
+          run: cowsay -f dragon " run for cover,Iam a ddddd" >> dragan.txt
+
+       # - name: List files
+       #   run: ls
+       # - name: read file
+       #   run: cat README.md
