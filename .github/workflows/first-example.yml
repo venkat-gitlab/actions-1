@@ -5,7 +5,11 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps: 
+        - name: check repo
+          uses: actions/checkout@v4
         - name: welecome message
           run: echo "hello my first git"
         - name: List files
           run: ls
+        - name: read file
+          run: cat README.md
