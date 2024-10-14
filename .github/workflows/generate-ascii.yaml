@@ -9,7 +9,7 @@ jobs:
           uses: actions/checkout@v4
         - name: list files
           run: ls -ltra
-        - name: Execute script
+        - name: Execute scripts
           run: |
             chmod +x ascii-script.sh
             ./ascii-script.sh
